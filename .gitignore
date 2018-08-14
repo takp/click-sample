@@ -5,6 +5,10 @@ venv
 *.pyc
 __pycache__/
 
+.mypy_cache/
+.coverage
+.pytest_cache/
+
 # setuptools files
 *.egg-info/
 
