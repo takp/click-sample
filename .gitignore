@@ -23,3 +23,6 @@ README.rst
 # Editor
 .idea
 .vscode
+
+# Output files
+output.yml
