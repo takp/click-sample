@@ -3,11 +3,10 @@ from generator import YamlGenerator
 
 
 @click.command()
-@click.option('--count', default=1, help='Number of greetings.')
-@click.option('--project_name', prompt='Your project name', help='The project\'s name.')
-def execute(count, project_name):
+@click.option('--app_name', prompt="Your application name", help='Name of application')
+def execute(app_name):
     """Simple program that generates sample YAML file."""
-    YamlGenerator().execute(project_name)
+    YamlGenerator().execute(app_name)
     click.echo('Created output.yml.')
 
 
