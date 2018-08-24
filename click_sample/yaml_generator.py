@@ -1,8 +1,9 @@
 from typing import Any
+
 import yaml
 
 
-class YamlGenerator:
+class YamlGenerator(object):
     def __init__(self) -> None:
         pass
 
@@ -14,7 +15,6 @@ class YamlGenerator:
                 service_a='framework_a',
                 service_b='framework_b',
                 service_c='framework_c',
-            )
-        )
+            ))
         with open('output.yml', 'w') as outfile:
             yaml.dump(data, outfile, default_flow_style=False)
