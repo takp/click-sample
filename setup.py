@@ -10,6 +10,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        click=main:execute
+        click=cli:execute
     ''',
 )

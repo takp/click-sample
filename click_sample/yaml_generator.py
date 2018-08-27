@@ -1,5 +1,3 @@
-from typing import Any
-
 import yaml
 
 
@@ -7,14 +5,11 @@ class YamlGenerator(object):
     def __init__(self) -> None:
         pass
 
-    def execute(self, project_name) -> Any:
+    def execute(self, app_name: str, dag_name: str) -> None:
         data = dict(
             version='1.0',
-            project=project_name,
-            services=dict(
-                service_a='framework_a',
-                service_b='framework_b',
-                service_c='framework_c',
-            ))
+            app_name=app_name,
+            dag_name=dag_name
+        )
         with open('settings.yml', 'w') as outfile:
             yaml.dump(data, outfile, default_flow_style=False)
