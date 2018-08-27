@@ -16,5 +16,5 @@ class YamlGenerator(object):
                 service_b='framework_b',
                 service_c='framework_c',
             ))
-        with open('output.yml', 'w') as outfile:
+        with open('settings.yml', 'w') as outfile:
             yaml.dump(data, outfile, default_flow_style=False)
